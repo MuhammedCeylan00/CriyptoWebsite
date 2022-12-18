@@ -3,9 +3,10 @@ import HomePage from "@/pages/HomePage"
 import CryptoDetail from "@/pages/CryptoDetail"
 import InfoDetail from "@/pages/InfoDetail"
 import CriptoLists from "@/pages/CriptoLists"
+import NewsPage from "@/pages/NewsPage"
 const routes = [
     {
-        name: 'list',
+        name: 'home',
         path:"/",
         component: HomePage
     },
@@ -24,6 +25,11 @@ const routes = [
         name:'criptos',
         path:"/criptos",
         component:CriptoLists
+    },
+    {
+        name:'news',
+        path:'/news',
+        component:NewsPage
     }
 ]
 

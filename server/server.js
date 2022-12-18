@@ -18,7 +18,7 @@ app.get("", (req, res) => {
 });
 
 let cryptocurrencies = {};
-
+let newsCriptos={};
 const getCryptos = async () => {
   let response = await axios.get(
     "https://pro-api.coinmarketcap.com/v1/cryptocurrency/map?limit=40",
@@ -30,12 +30,25 @@ const getCryptos = async () => {
   );
 
   cryptocurrencies = response.data;
+  console.log(cryptocurrencies);
+};
+
+const getCryproNews = async () => {
+  let response = await axios.get(
+    "https://newsapi.org/v2/everything?q=bitcoin&apiKey=c4162774b9b4413b94c135ca208cea50",
+  );
+
+  newsCriptos = response.data;
+  console.log(newsCriptos);
 };
 
 getCryptos();
-
+getCryproNews();
 app.get("/get-cryptos", cors(), (req, res) => {
   res.send(cryptocurrencies);
+});
+app.get("/get-crypto-news", cors(), (req, res) => {
+  res.send(newsCriptos);
 });
 
 app.post("/get-crypto-detail", cors(), async (req, res) => {

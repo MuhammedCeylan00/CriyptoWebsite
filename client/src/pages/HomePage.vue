@@ -1,45 +1,29 @@
 <template>
-  <nav class="bg-gray-900 text-white shadow-lg shadow-blue-500/50 pb-8  font-serif text-xl">
-    <ul>
-      <li class="inline-block pr-10 pl-10">
-        <a href="#" class="hover:underline ">Ana Sayfa</a>
-      </li>
-      <li class="inline-block pr-10">
-        <a href="#" class="hover:underline ">Haberler</a>
-      </li>
-      <li class="inline-block pr-10">
-        <a href="#" class="hover:underline ">Bloglar</a>
-      </li>
-      <li class="inline-block pr-10">
-        <router-link to="/criptos">Kriptolar</router-link>
-      </li>
-      <li class="inline-block pr-10">
-        <a href="#" class="hover:underline">Hakkımızda</a>
-      </li>
-    </ul>
-  </nav>
   <div class="mt-20  bg-gray-900 min-h-screen flex flex-col">
     <div class="font-mono text-xl pb-48 pb-20">
       <Transition name="bounce">
         <h2 v-if="show" class="text-4xl text-yellow-400 font-bold">
-          Kripto para Dünyasına Hoş geldiniz...
+          Welcome to the Cryptocurrency World...
         </h2>
       </Transition>
     </div>
+    <div class="flex justify-center">
     <div class="flex">
-      <div class="bg-yellow-500 w-96 h-96 m-8  font-serif  text-gray-900 rounded-2xl ml-32">
+      <div class="bg-yellow-500 w-96 h-96   font-serif  text-gray-900 rounded-2xl ml-32">
         <h1 class="font-bold pt-3">Lorem.</h1>
-        <p class="pt-5 pr-5 pl-5  "> Kripto paralar, sanal para birimi olarak kullanılan ve herhangi bir fiziksel
+        <p class="pt-5 pr-5 pl-5 text-justify "> Kripto paralar, sanal para birimi olarak kullanılan ve herhangi bir fiziksel
           biçimde
           mevcut olmayan dijital
           varlıklardır. Kriptografi, yani şifreleme ile güvence altına alınmışlardır. Bu sayede örneğin; sahtecilik veya
           aynı kripto parayla birden fazla işlem yapmak anlamına gelen “çifte harcama” eylemi neredeyse imkânsız hale
           gelmiştir..</p>
         <router-link to="/infodetail"> <button
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-20">
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-10">
             Detay</button></router-link>
-      </div>
-      <img class="pl-32" src="../assets/bitcoin_PNG27.png">
+      </div></div>
+    <!-- <img class="pl-32" src="../assets/bitcoin_PNG27.png"> -->
+    <img class="pl-32" src="https://cliply.co/wp-content/uploads/2021/02/372102230_BITCOIN_400px.gif">
+
     </div>
     <div class="font-mono pt-32 pb-32">
       <p class="mx-auto px-12 text-justify">
