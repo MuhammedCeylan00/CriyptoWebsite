@@ -11,7 +11,7 @@
                     <p class="text-black pt-20 p-10 text-justify">
                         {{ newsData[index].description }}
                     </p>
-                    <button class="bg-green-500  w-24 float-right  m-10 center rounded-lg  text-white">Detail</button>
+                    <button @click="goToUrl(index)" class="bg-green-500  w-24 float-right  m-10 center rounded-lg  text-white">Detail</button>
                 </div>
             </div>
         <button v-if="state" @click="readMore" class="text-white p-2 mb-10 rounded-lg border">Read More</button>
@@ -50,7 +50,10 @@ export default {
                 this.state=false
             }
             
-        }
+        },
+        goToUrl(index) {
+        location.href=this.newsData[index].url
+    }
     },
 
 };

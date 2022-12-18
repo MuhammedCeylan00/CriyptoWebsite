@@ -4,7 +4,7 @@
       <nav class="bg-gray-900 text-white shadow-lg shadow-blue-500/50 pb-8  font-serif text-xl">
         <h1 class="float-left pl-14 text-4xl font-serif">What is this crypto?</h1>
         <br><br>
-    <ul class="pr-48">
+    <ul >
       <li class="inline-block pr-10 pl-10">
         <router-link to="/">Home</router-link>
       </li>
@@ -25,10 +25,7 @@
         <div class="footer-header">
         </div>
         <div class="logo-des">
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-          
-          <a href="#" class="btn-know">Know More</a>
-        </div>
+<p>The crypto world is developing more and more every day.</p>                  </div>
         
         
       </div>
@@ -36,16 +33,6 @@
       
       
       <div class="office row">
-        <div class="footer-header">
-          <h3>Office</h3>
-        </div>
-        <div class="office-des">
-          <p>here are <br> many variations of passages<br>of Lorem Ipsum<br>available</p>
-          
-         <a href="#">Criptos@gmail.com</a>
-          
-          <p class = "num">+91-9999999999</p>
-        </div>
       </div>
       
       
@@ -80,7 +67,7 @@
     <div class="copyright">
     <hr>
     
-    <p>© Copyright 2022 Manik Maity.</p>
+    <p>© Crypto 2022 December.</p>
     </div>
   </footer>
     </div>
