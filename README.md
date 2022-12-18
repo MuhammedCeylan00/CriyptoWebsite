@@ -1,1 +1,1 @@
-# CriyptoWebsite
+# CryptoWebsite
